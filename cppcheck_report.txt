@@ -1,0 +1,272 @@
+src/php/impl/php_ngx.h:77:1: error: There is an unknown macro here somewhere. Configuration is required. If ZEND_BEGIN_MODULE_GLOBALS is a macro then please configure it. [unknownMacro]
+ZEND_BEGIN_MODULE_GLOBALS(php_ngx)
+^
+src/php/impl/php_ngx_log.h:40:1: error: There is an unknown macro here somewhere. Configuration is required. If ZEND_END_ARG_INFO is a macro then please configure it. [unknownMacro]
+ZEND_END_ARG_INFO()
+^
+src/ngx_php_conf_file.c:369:9: error: Address of local auto-variable assigned to a function parameter. [autoVariables]
+        cf->conf_file = &conf_file;
+        ^
+src/php/impl/php_ngx.c:399:0: information: Skipping configuration 'HAVE_SIGNAL_H;SIGPIPE;SIG_IGN' since the value of 'SIGPIPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    signal(SIGPIPE, SIG_IGN); /* ignore SIGPIPE in standalone mode so
+^
+src/php/impl/php_ngx.c:399:0: information: Skipping configuration 'HAVE_SIGNAL_H;SIGPIPE;SIG_IGN' since the value of 'SIG_IGN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    signal(SIGPIPE, SIG_IGN); /* ignore SIGPIPE in standalone mode so
+^
+src/php/impl/php_ngx_track.c:112:40: error: There is an unknown macro here somewhere. Configuration is required. If CG is a macro then please configure it. [unknownMacro]
+        zend_hash_apply_with_arguments(CG(function_table) TSRMLS_CC, (apply_func_args_t) ngx_track_fe_wrapper, 0);
+                                       ^
+third_party/ngx_devel_kit/objs/ndk_config.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 16 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+third_party/ngx_devel_kit/src/ndk.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 18 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+third_party/ngx_devel_kit/src/ndk.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+third_party/ngx_devel_kit/src/ndk_buf.c:8:22: style: The scope of the variable 'b' can be reduced. [variableScope]
+    ngx_buf_t       *b;
+                     ^
+third_party/ngx_devel_kit/src/ndk_complex_path.c:102:34: style: The scope of the variable 'a' can be reduced. [variableScope]
+    ngx_array_t                 *a;
+                                 ^
+third_party/ngx_devel_kit/src/ndk_complex_path.c:103:34: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t             *post;
+                                 ^
+third_party/ngx_devel_kit/src/ndk_complex_value.c:25:34: style: The scope of the variable 'cv' can be reduced. [variableScope]
+    ngx_http_complex_value_t    *cv;
+                                 ^
+third_party/ngx_devel_kit/src/ndk_complex_value.c:80:34: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t             *post;
+                                 ^
+third_party/ngx_devel_kit/src/ndk_complex_value.c:109:34: style: The scope of the variable 'cv' can be reduced. [variableScope]
+    ngx_http_complex_value_t    *cv;
+                                 ^
+third_party/ngx_devel_kit/src/ndk_complex_value.c:111:34: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t             *post;
+                                 ^
+third_party/ngx_devel_kit/src/ndk_complex_value.c:157:34: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t             *post;
+                                 ^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:18:23: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t  *post;
+                      ^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:44:23: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t  *post;
+                      ^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:91:23: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t  *post;
+                      ^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:117:23: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t  *post;
+                      ^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:148:24: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t   *post;
+                       ^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:191:26: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t     *post;
+                         ^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:220:23: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t  *post;
+                      ^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:260:26: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t     *post;
+                         ^
+third_party/ngx_devel_kit/src/ndk_debug.c:7:25: style: The scope of the variable 'tlen' can be reduced. [variableScope]
+    size_t   len, flen, tlen;
+                        ^
+third_party/ngx_devel_kit/src/ndk_debug.c:19:14: style: Variable 'tlen' is assigned a value that is never used. [unreadVariable]
+        tlen = len + 1;
+             ^
+third_party/ngx_devel_kit/src/ndk_debug.c:22:13: style: Unused variable: func_name [unusedVariable]
+    char    func_name [len + flen + 1];
+            ^
+third_party/ngx_devel_kit/src/ndk_path.c:470:23: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t  *post;
+                      ^
+third_party/ngx_devel_kit/src/ndk_path.c:504:24: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t   *post;
+                       ^
+third_party/ngx_devel_kit/src/ndk_regex.c:9:30: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t         *post;
+                             ^
+third_party/ngx_devel_kit/src/ndk_regex.c:53:30: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t         *post;
+                             ^
+third_party/ngx_devel_kit/src/ndk_regex.c:99:30: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t         *post;
+                             ^
+third_party/ngx_devel_kit/src/ndk_regex.c:101:30: style: The scope of the variable 're' can be reduced. [variableScope]
+    ngx_regex_elt_t         *re;
+                             ^
+third_party/ngx_devel_kit/src/ndk_regex.c:161:30: style: The scope of the variable 'post' can be reduced. [variableScope]
+    ngx_conf_post_t         *post;
+                             ^
+third_party/ngx_devel_kit/src/ndk_regex.c:163:30: style: The scope of the variable 're' can be reduced. [variableScope]
+    ngx_regex_elt_t         *re;
+                             ^
+third_party/ngx_devel_kit/src/ndk_regex.c:127:17: error: Uninitialized variable: n [uninitvar]
+    for (i=0; i<n; i++, value++) {
+                ^
+third_party/ngx_devel_kit/src/ndk_regex.c:189:17: error: Uninitialized variable: n [uninitvar]
+    for (i=0; i<n; i++, value++) {
+                ^
+third_party/ngx_devel_kit/src/ndk_rewrite.c:18:44: style: The scope of the variable 'val' can be reduced. [variableScope]
+    ngx_http_script_value_code_t          *val;
+                                           ^
+third_party/ngx_devel_kit/src/ndk_set_var.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+third_party/ngx_devel_kit/src/ndk_string.c:72:22: style: The scope of the variable 'str' can be reduced. [variableScope]
+    ngx_str_t       *str;
+                     ^
+third_party/ngx_devel_kit/src/ndk_encoding.c:5:0: style: The function 'ndk_conf_set_encoding_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:39:0: style: The function 'ndk_conf_set_false_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_path.c:575:0: style: The function 'ndk_conf_set_full_conf_path' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_path.c:564:0: style: The function 'ndk_conf_set_full_path' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_path.c:465:0: style: The function 'ndk_conf_set_full_path_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_complex_value.c:150:0: style: The function 'ndk_conf_set_http_complex_keyval_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_complex_path.c:97:0: style: The function 'ndk_conf_set_http_complex_path_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_complex_value.c:104:0: style: The function 'ndk_conf_set_http_complex_value_array_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_complex_value.c:74:0: style: The function 'ndk_conf_set_http_complex_value_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:185:0: style: The function 'ndk_conf_set_keyval1_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:86:0: style: The function 'ndk_conf_set_null_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:111:0: style: The function 'ndk_conf_set_num64_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:214:0: style: The function 'ndk_conf_set_num_flag_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:66:0: style: The function 'ndk_conf_set_ptr_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_regex.c:156:0: style: The function 'ndk_conf_set_regex_array_caseless_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_regex.c:94:0: style: The function 'ndk_conf_set_regex_array_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_regex.c:48:0: style: The function 'ndk_conf_set_regex_caseless_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_regex.c:4:0: style: The function 'ndk_conf_set_regex_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:254:0: style: The function 'ndk_conf_set_sec_flag_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_path.c:496:0: style: The function 'ndk_conf_set_split_path_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:142:0: style: The function 'ndk_conf_set_str_array_multi_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:13:0: style: The function 'ndk_conf_set_true_slot' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_buf.c:35:0: style: The function 'ndk_copy_chain_to_charp' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_debug.c:5:0: style: The function 'ndk_debug_helper' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_debug.c:46:0: style: The function 'ndk_debug_request_helper' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_string.c:410:0: style: The function 'ndk_dupstr' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_upstream_list.c:184:0: style: The function 'ndk_get_upstream_list' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_complex_value.c:51:0: style: The function 'ndk_http_complex_value_array_compile' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_complex_value.c:22:0: style: The function 'ndk_http_complex_value_array_create' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_http.c:3:0: style: The function 'ndk_http_count_phase_handlers' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_http.c:17:0: style: The function 'ndk_http_parse_request_method' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_rewrite.c:13:0: style: The function 'ndk_http_rewrite_value' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_rewrite.c:71:0: style: The function 'ndk_http_rewrite_var' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_process.c:3:0: style: The function 'ndk_init_signals' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_uri.c:6:0: style: The function 'ndk_map_uri_to_path_add_suffix' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_hash.c:25:0: style: The function 'ndk_md5_hash' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_hash.c:31:0: style: The function 'ndk_md5_hash_upper' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_hash.c:62:0: style: The function 'ndk_murmur2_hash' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_hash.c:72:0: style: The function 'ndk_murmur2_hash_upper' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:370:0: style: The function 'ndk_replace_command' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_hash.c:40:0: style: The function 'ndk_sha1_hash' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_hash.c:46:0: style: The function 'ndk_sha1_hash_upper' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_path.c:360:0: style: The function 'ndk_split_path_create' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_path.c:411:0: style: The function 'ndk_split_path_create_raw' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_string.c:69:0: style: The function 'ndk_str_array_create' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_upstream_list.c:59:0: style: The function 'ndk_upstream_list' is never used. [unusedFunction]
+
+^
+third_party/ngx_devel_kit/src/ndk_conf_file.c:345:0: style: The function 'ngx_conf_create_http_named_location' is never used. [unusedFunction]
+
+^
+src/ngx_php_conf_file.c:50:0: style: The function 'ngx_php_conf_handler' is never used. [unusedFunction]
+
+^
+src/ngx_php_conf_file.c:336:0: style: The function 'ngx_php_conf_parse' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
